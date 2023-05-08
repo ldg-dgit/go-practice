@@ -1,12 +1,12 @@
 package main
 
-import (
-	"fmt"
-
-	"github.com/ldg-dgit/go-practice/go-basic/something"
-)
+import "fmt"
 
 func main() {
-	fmt.Println(("Hello World"))
-	something.SayHello()
+	const name string = "bobby"
+	var name_2 string = "bobby"
+	name_3 := "bobby"
+	fmt.Println(name)
+	fmt.Println(name_2)
+	fmt.Println(name_3)
 }
