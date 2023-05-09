@@ -5,17 +5,15 @@ import (
 )
 
 func main() {
-	a := 2
-	b := a
-	a = 10
-	fmt.Println(&a, &b)
-	// access to memory address (&a is giving memory address)
-	// *c is look the value of memory (pointer)
+	// array는 배열 크기 지정 필요
+	numbers := [5]string{"1", "2", "3"}
+	fmt.Println(numbers)
+	numbers[3] = "4"
+	numbers[4] = "5"
+	fmt.Println(numbers)
 
-	c := &a
-	a = 20
-	fmt.Println(a, *c)
-
-	*c = 50
-	fmt.Println(a, *c)
+	// 크기 제한 없는 slice
+	names := []string{"bobby"}
+	names = append(names, "lee")
+	fmt.Println(names)
 }
